@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.fixedbutts{
+    position: fixed;    
+    right: 15px;
+    top: 30%;
+}
+.fixedbutts a{
+    position: relative;
+}
+.fixedbutts a i{
+    transition: 1s;
+}
+.fixedbutts a:hover .rot{
+    transform: rotate(360deg);
+}
+.span{
+    width: 0;
+    position: absolute;
+    top: 5px;
+    right: 50%;
+    transition: 1s;
+    opacity: 0;
+    padding: 8px 30px;
+    background-color: green;
+    border-radius: 50px;
+    z-index: -9;
+    color: white;
+}
+.fixedbutts a:hover .span{
+    width: 100px;
+    opacity: 1;
+}
+.fixedbutts i{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    margin: 5px 0;
+}
+.main{
+    width: 100%;
+}
+.fs{
+    width: 1320px;
+    margin: auto;
+}
+.fs1{
+    width: 1170px;
+    margin: auto;
+}
+.fs2{
+    width: 970px;
+    margin: auto;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+}
+.header{
+    box-shadow: 5px 0 10px 1px rgb(197, 197, 197);
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.logo{
+    width: 250px;
+}
+.logo img{
+    margin-left: 15px;
+    width: 100%;
+}
+.menu li{
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.menu li button{
+    padding: 10px 20px;
+    border: none;
+    background-image: linear-gradient(to right, #c27a2e,#cd8a43,#db9e5c,#895b2a);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu li button:hover{
+    background: #cd2721;
+}
+.menu li a{
+    color: black;
+    position: relative;
+}
+.menu li a span{
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    transition: .3s;
+    top: 100%;
+    left: 0px;
+    background-color: #df7f18;
+}
+.menu li a:hover{
+    color: #df7f18;
+}
+.menu li a:hover span{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100% ;
+}
+.register{
+    width: 100%;
+    background-image: url(Images/blue.webp);
+    background-size: cover;
+}
+.inform{
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.inform_conent{
+    margin: 40px;
+}
+.inform_conent h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.inform_conent h2{
+    font-size: 40px;   
+    font-weight: 600;
+    color: #df7f18;
+}
+.inform_conent p{
+    color: white;
+    margin: 15px 0px;
+}
+.community{
+    flex-basis: 49%;
+    color: white;
+    margin: 20px 0;
+}
+.community i{
+    font-size: 20px;
+}
+.community h3{
+    font-size: 20px;
+}
+.community span{
+    font-size: 20px;
+    color: #df7f18;
+}
+.communityborder{
+    border-right: 1px solid #df7f18;
+}
+.forming{
+    background-color: white;
+    padding: 40px 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 50px 0;
+}
+.forming h3{
+    color: #df7f18;
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.forming input{
+    width: 350px;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 3px;
+}
+.forming input:focus{
+    outline: none;
+}
+.forming textarea{
+    width: 350px;
+    font-size: 16px;
+    padding: 20px 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    resize: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.form-Enquiry{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 200px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    background-image: -webkit-linear-gradient( #df7f18 0%, #cd2721 99%);
+    align-self: flex-start;
+}
+.gallery{
+    text-align: center;
+    margin: 50px 0;
+}
+.gallery h4,
+.floorplan h3,
+.amenities h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.galga{
+    width: 24.6%;
+}
+.img img{
+    width: 100%;
+}
+.whythis{
+    padding: 50px 0;
+    margin: 40px auto;
+}
+.whythis .img{
+    margin: auto;
+    width: 200px;
+}
+.whythis p{
+    margin: 20px auto;
+    text-align: center;
+    padding: 0 100px;
+}
+.floorplan{
+    text-align: center;
+}
+.floorplan .flex{
+    margin: 40px 0;
+}
+.floor img{
+    width: 23%;
+    margin: 1%;
+}
+.amenities{
+    margin: 50px auto;
+    padding: 30px 0;
+}
+.amnebutts{
+    justify-content: flex-start;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+.amnebutts li button{
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0.2px rgb(207, 207, 207);
+}
+.amnebutts li button:hover{
+    color: #df7f18;
+}
+.amnebutts li button:focus{
+    background-color: #cd2721;
+    color: white;
+}
+.amneoption{
+    flex-basis: 15%;
+    flex-direction: column;
+    margin: 1% 0.5%;
+}
+.amneoption img{
+    width: 70px;
+}
+.amneoption h6{
+    font-size: 17px;
+    font-weight: 600;
+}
+.map{
+    text-align: center;
+}
+.map h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.Walkthrough{
+    text-align: center;
+    margin: 50px auto;
+}
+.Walkthrough h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.fashion_form{
+    margin: 50px auto;
+    padding: 50px 0;
+}
+.fashion{
+    flex-basis: 20% ;
+}
+.lastform{
+    flex-basis: 75%;
+    text-align: center;
+}
+.lastform h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.form input{
+    flex-basis: 49%;
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+.form input:focus{
+    outline: 1px solid #df7f18;
+    border: none;
+    border-radius: 2px;
+}
+.form textarea{
+    resize: none;
+    width: 100%;
+    padding: 10px 0 50px 15px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+.form textarea:focus{
+    outline: 1px solid #df7f18;
+    border: none;
+    border-radius: 2px;
+}
+.form button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    color: black;
+    background-color: #cd2721;
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer{
+    background-image: url(Images/blue.webp);
+    padding: 50px 0;
+}
+.footleft{
+    flex-basis: 30%;
+    color: white;
+}
+.footleft h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.reality{
+    width: 300px;
+    margin: 20px 0;
+}
+.footleft span{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.footright{
+    flex-basis: 70%;
+}
+.footright p{
+    margin: 20px 0;
+    color: white;
+}
+.footright span{
+    margin: 20px 0;
+    color: white;
+}
+.footicon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 0;
+}
+.footicon i{
+    font-size: 22px;
+    color: #df7f18;
+}
+.footericons{
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+.footicon i{
+    transition: 1s;
+}
+.footericons a:hover .footicon{
+    background-color: #df7f18;
+}
+.footericons a:hover .footicon i{
+    color: white;
+}
+.footericons a:hover .footicon i{
+    transform: rotate(360deg);
+}
+.border{
+    padding: 25px;
+    border-bottom: 1px solid white;
+}
+.whatever{
+    text-align: center;
+}
+.whatever h3{
+    color: white;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.whatever h3 a{
+    color: white    ;
+}
